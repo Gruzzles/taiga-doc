@@ -122,6 +122,12 @@ mkvirtualenv -p /usr/bin/python3.5 taiga
 pip install -r requirements.txt
 ----
 
+.Create postgress database user
+[source, bash]
+----
+sudo -u postgres createuser $USER
+----
+
 .Populate the database with initial basic data
 [source,bash]
 ----
